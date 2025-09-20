@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.fan-container {
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+}
+
+.fan-container img {
+  width: 100%;
+  height: 100%;
+  animation: spin infinite linear;
+  animation-duration: 0s; /* default: stopped */
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+input[type="range"] {
+  width: 60%;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background: #555;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

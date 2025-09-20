@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fan Speed Controller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fan Speed Controller</h1>
+
+    <!-- Fan Image -->
+    <div class="fan-container">
+      <img id="fan" src="https://cdn-icons-png.flaticon.com/512/1048/1048945.png" alt="Fan">
+    </div>
+
+    <!-- Speed Control Slider -->
+    <div class="controls">
+      <label for="speedRange">Speed: <span id="speedValue">0</span></label>
+      <input type="range" id="speedRange" min="0" max="5" value="0">
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button onclick="setSpeed(0)">Off</button>
+      <button onclick="setSpeed(1)">Low</button>
+      <button onclick="setSpeed(3)">Medium</button>
+      <button onclick="setSpeed(5)">High</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
